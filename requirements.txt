@@ -1,0 +1,6 @@
+flask
+Flask-Pushjack
+requests
+bs4
+html5lib
+pyrebase
