@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="MpG-im-J58">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ourViewController" customModule="PriceDrop" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pricedroptext" translatesAutoresizingMaskIntoConstraints="NO" id="pik-29-H0y">
+                                <frame key="frameInset" minX="71" minY="28" width="220" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pricedroplogo" highlightedImage="pricedroplogo" translatesAutoresizingMaskIntoConstraints="NO" id="8xl-vL-KWM">
+                                <frame key="frameInset" minX="24" minY="135" width="328" height="315"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="&quot;Glamour never takes a day off&quot;  - Coco Chanel" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9x3-zM-3wj">
+                                <frame key="frameInset" minY="485" width="375" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="13"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="-Coco Chanel" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f1Q-sV-eNa">
+                                <frame key="frameInset" minX="97" minY="531" width="169" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="13"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" id="6rE-BE-AC8"/>
+                    <connections>
+                        <outlet property="priceDropImageLogo" destination="8xl-vL-KWM" id="DSx-j3-07z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1546.4000000000001" y="996.25187406296857"/>
+        </scene>
+        <!--Trending-->
+        <scene sceneID="Fwm-ST-iN7">
+            <objects>
+                <viewController id="yUQ-q0-fe9" customClass="TrendingViewController" customModule="PriceDrop" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wKa-zm-hvC"/>
+                        <viewControllerLayoutGuide type="bottom" id="SUY-JA-Fje"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="t14-pB-zay">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="collage" translatesAutoresizingMaskIntoConstraints="NO" id="hnl-D4-BQC">
+                                <frame key="frameInset" minX="16" minY="286" width="343" height="332"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="collage" translatesAutoresizingMaskIntoConstraints="NO" id="Pt0-YC-LOq">
+                                <frame key="frameInset" minX="16" width="343" height="287"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1y3-ne-7qB">
+                                <frame key="frameInset" minX="16" minY="6" width="343" height="272"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="UrbanLink:" destination="yUQ-q0-fe9" eventType="touchUpInside" id="m2Z-dL-p5F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9y-bf-FPl">
+                                <frame key="frameInset" minX="16" minY="286" width="343" height="324"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="UrbanLink2:" destination="yUQ-q0-fe9" eventType="touchUpInside" id="E9M-Oa-f6V"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Trending" image="Star" id="MbS-S9-tXo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h5b-hG-yq2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-711.20000000000005" y="996.25187406296857"/>
+        </scene>
+        <!--My Items-->
+        <scene sceneID="Fzz-nH-G56">
+            <objects>
+                <viewController id="egh-xV-2RH" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HlV-Md-A3m"/>
+                        <viewControllerLayoutGuide type="bottom" id="4Mh-CX-k1Y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xX6-pk-xkx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="This blank canvas awaits inspiration" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kRg-0V-ncQ">
+                                <frame key="frameInset" minX="8" minY="210" width="359" height="208"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="My Items" image="package" id="mN7-oZ-k1F"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jnP-LQ-jPG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="350" y="989"/>
+        </scene>
+        <!--Explore-->
+        <scene sceneID="Ow4-m4-l7T">
+            <objects>
+                <viewController id="wrj-sL-Hmu" customClass="ExplorerViewController" customModule="PriceDrop" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WrY-uH-HwU"/>
+                        <viewControllerLayoutGuide type="bottom" id="vrk-kp-JXy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="G1R-Sj-50v">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nordstrom" translatesAutoresizingMaskIntoConstraints="NO" id="D4G-7P-f8i">
+                                <frame key="frameInset" minY="28" width="375" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="urbanoutfitters" translatesAutoresizingMaskIntoConstraints="NO" id="d9k-Ga-AQ9">
+                                <frame key="frameInset" minY="79" width="375" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="anthropologie" translatesAutoresizingMaskIntoConstraints="NO" id="CEh-DF-Ngo">
+                                <frame key="frameInset" minY="130" width="375" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bcbg" translatesAutoresizingMaskIntoConstraints="NO" id="2Nh-iX-gbm">
+                                <frame key="frameInset" minY="171" width="375" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bloomingdales" translatesAutoresizingMaskIntoConstraints="NO" id="Jcb-44-2Nb">
+                                <frame key="frameInset" minY="212" width="375" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="elle" translatesAutoresizingMaskIntoConstraints="NO" id="SVp-rh-pyG">
+                                <frame key="frameInset" minY="252" width="375" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lululemon" translatesAutoresizingMaskIntoConstraints="NO" id="LiZ-sb-Ec1">
+                                <frame key="frameInset" minY="291" width="375" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="michaelkors" translatesAutoresizingMaskIntoConstraints="NO" id="nPo-Kp-1SJ">
+                                <frame key="frameInset" minY="332" width="375" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="neimanmarcus" translatesAutoresizingMaskIntoConstraints="NO" id="mo4-Ey-dKz">
+                                <frame key="frameInset" minY="373" width="375" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nike" translatesAutoresizingMaskIntoConstraints="NO" id="xeV-lP-BrI">
+                                <frame key="frameInset" minY="424" width="375" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="oakley" translatesAutoresizingMaskIntoConstraints="NO" id="5GU-oP-M5D">
+                                <frame key="frameInset" minY="466" width="375" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="patagonia" translatesAutoresizingMaskIntoConstraints="NO" id="9ih-M8-MnK">
+                                <frame key="frameInset" minY="508" width="375" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ralphlauren" translatesAutoresizingMaskIntoConstraints="NO" id="JXJ-7y-J9t">
+                                <frame key="frameInset" minY="549" width="375" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2WQ-tK-Yhb">
+                                <frame key="frameInset" minY="28" width="359" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="nordstrom:" destination="wrj-sL-Hmu" eventType="touchUpInside" id="5fo-5m-kQs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0e-aw-t5H">
+                                <frame key="frameInset" minY="85" width="375" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="urbanoutfitters:" destination="wrj-sL-Hmu" eventType="touchUpInside" id="M0c-5V-Q83"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRb-FF-1Dx">
+                                <frame key="frameInset" minY="136" width="375" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="anthropologie:" destination="wrj-sL-Hmu" eventType="touchUpInside" id="EH5-AS-2Le"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TgW-ee-KJA">
+                                <frame key="frameInset" minY="177" width="375" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="bcbg:" destination="wrj-sL-Hmu" eventType="touchUpInside" id="6TJ-Lr-wtV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QKO-UX-nRF">
+                                <frame key="frameInset" minY="218" width="375" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="bloomingdales:" destination="wrj-sL-Hmu" eventType="touchUpInside" id="LVo-Xs-e6H"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Jy-kD-N29">
+                                <frame key="frameInset" minY="258" width="375" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="elle:" destination="wrj-sL-Hmu" eventType="touchUpInside" id="Cju-Ou-iLU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ht-QP-grc">
+                                <frame key="frameInset" minY="297" width="375" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="lululemon:" destination="wrj-sL-Hmu" eventType="touchUpInside" id="Z9O-Hr-6jm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YT2-py-Vnx">
+                                <frame key="frameInset" minY="338" width="375" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="michaelkors:" destination="wrj-sL-Hmu" eventType="touchUpInside" id="QYz-RO-BnC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7B6-UZ-w1w">
+                                <frame key="frameInset" minY="379" width="375" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="neimannmarcus:" destination="wrj-sL-Hmu" eventType="touchUpInside" id="V45-jO-2X4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="83a-bd-8Z6">
+                                <frame key="frameInset" minY="430" width="375" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="nike:" destination="wrj-sL-Hmu" eventType="touchUpInside" id="otS-3G-GgX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odZ-sh-ZHG">
+                                <frame key="frameInset" minX="16" minY="511" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="patagonia:" destination="wrj-sL-Hmu" eventType="touchUpInside" id="Ip0-oQ-pDC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEv-Yy-RQj">
+                                <frame key="frameInset" minY="555" width="375" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="ralphlauren:" destination="wrj-sL-Hmu" eventType="touchUpInside" id="PLi-Jg-sqP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ARr-3V-D3d">
+                                <frame key="frameInset" minY="472" width="375" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="oakley:" destination="wrj-sL-Hmu" eventType="touchUpInside" id="cmB-yg-kfl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Explore" image="Search" id="dR4-Zl-10F"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B7U-mR-ZKm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1097" y="996"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ahj-eM-oH0">
+            <objects>
+                <tabBarController id="MpG-im-J58" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Ou7-9P-gkS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="R6v-Gh-l2e"/>
+                        <segue destination="yUQ-q0-fe9" kind="relationship" relationship="viewControllers" id="3of-5Y-Tvb"/>
+                        <segue destination="egh-xV-2RH" kind="relationship" relationship="viewControllers" id="plq-hs-nHM"/>
+                        <segue destination="wrj-sL-Hmu" kind="relationship" relationship="viewControllers" id="ROq-kI-Qf2"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YQp-Uw-4yS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-22" y="228"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Search" width="25" height="25"/>
+        <image name="Star" width="25" height="25"/>
+        <image name="anthropologie" width="205" height="20"/>
+        <image name="bcbg" width="64" height="20"/>
+        <image name="bloomingdales" width="61" height="20"/>
+        <image name="collage" width="480" height="480"/>
+        <image name="elle" width="58" height="20"/>
+        <image name="house" width="25" height="25"/>
+        <image name="lululemon" width="120" height="20"/>
+        <image name="michaelkors" width="89" height="20"/>
+        <image name="neimanmarcus" width="50" height="20"/>
+        <image name="nike" width="38" height="20"/>
+        <image name="nordstrom" width="124" height="17"/>
+        <image name="oakley" width="66" height="20"/>
+        <image name="package" width="25" height="25"/>
+        <image name="patagonia" width="51" height="20"/>
+        <image name="pricedroplogo" width="400" height="399"/>
+        <image name="pricedroptext" width="400" height="122"/>
+        <image name="ralphlauren" width="58" height="20"/>
+        <image name="urbanoutfitters" width="59" height="20"/>
+    </resources>
+</document>
