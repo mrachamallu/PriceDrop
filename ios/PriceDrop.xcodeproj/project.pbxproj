@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A0F41C21ED5A5D60054A5EC /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66455B6A1ED578820091D714 /* Item.swift */; };
+		2A0F41C31ED5A5DA0054A5EC /* ItemCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66455B681ED576270091D714 /* ItemCollectionViewController.swift */; };
+		2A0F41C41ED5A5DD0054A5EC /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66455B661ED575FD0091D714 /* ItemCollectionViewCell.swift */; };
 		66455B591ED559DE0091D714 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66455B581ED559DE0091D714 /* ShareViewController.swift */; };
 		66455B5C1ED559DE0091D714 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66455B5A1ED559DE0091D714 /* MainInterface.storyboard */; };
 		66455B601ED559DE0091D714 /* ShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 66455B561ED559DE0091D714 /* ShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		66455B651ED55C7C0091D714 /* GetURL.js in Resources */ = {isa = PBXBuildFile; fileRef = 66455B641ED55C7C0091D714 /* GetURL.js */; };
-		66455B671ED575FD0091D714 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66455B661ED575FD0091D714 /* ItemCollectionViewCell.swift */; };
-		66455B691ED576270091D714 /* ItemCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66455B681ED576270091D714 /* ItemCollectionViewController.swift */; };
-		66455B6B1ED578820091D714 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66455B6A1ED578820091D714 /* Item.swift */; };
 		6677C24E1E97327F00342D32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6677C24D1E97327F00342D32 /* AppDelegate.swift */; };
 		6677C2501E97327F00342D32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6677C24F1E97327F00342D32 /* ViewController.swift */; };
 		6677C2531E97327F00342D32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6677C2511E97327F00342D32 /* Main.storyboard */; };
@@ -328,10 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66455B6B1ED578820091D714 /* Item.swift in Sources */,
 				66455B591ED559DE0091D714 /* ShareViewController.swift in Sources */,
-				66455B671ED575FD0091D714 /* ItemCollectionViewCell.swift in Sources */,
-				66455B691ED576270091D714 /* ItemCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,10 +336,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A0F41C21ED5A5D60054A5EC /* Item.swift in Sources */,
 				6677C2501E97327F00342D32 /* ViewController.swift in Sources */,
 				66C430B01E9A8CFA003D6B9C /* TrendingViewController.swift in Sources */,
 				6677C24E1E97327F00342D32 /* AppDelegate.swift in Sources */,
 				66C430B21E9A9769003D6B9C /* ExplorerViewController.swift in Sources */,
+				2A0F41C31ED5A5DA0054A5EC /* ItemCollectionViewController.swift in Sources */,
+				2A0F41C41ED5A5DD0054A5EC /* ItemCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -594,6 +594,7 @@
 				66455B631ED559DE0091D714 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6677C2451E97327F00342D32 /* Build configuration list for PBXProject "PriceDrop" */ = {
 			isa = XCConfigurationList;
