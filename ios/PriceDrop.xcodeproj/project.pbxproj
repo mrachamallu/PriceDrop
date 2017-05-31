@@ -12,6 +12,8 @@
 		2A0F41C41ED5A5DD0054A5EC /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66455B661ED575FD0091D714 /* ItemCollectionViewCell.swift */; };
 		2A0F41FA1EDE353E0054A5EC /* indexString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0F41F91EDE353E0054A5EC /* indexString.swift */; };
 		2EE62FA187562FF78AE63524 /* Pods_PriceDrop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D6B2F725205933F3CEAEEE7 /* Pods_PriceDrop.framework */; };
+		6605A2C21EDEBA7A003B0122 /* RestaurantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6605A2C01EDEBA7A003B0122 /* RestaurantTableViewController.swift */; };
+		6605A2C31EDEBA7A003B0122 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6605A2C11EDEBA7A003B0122 /* RestaurantTableViewCell.swift */; };
 		66455B591ED559DE0091D714 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66455B581ED559DE0091D714 /* ShareViewController.swift */; };
 		66455B5C1ED559DE0091D714 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66455B5A1ED559DE0091D714 /* MainInterface.storyboard */; };
 		66455B601ED559DE0091D714 /* ShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 66455B561ED559DE0091D714 /* ShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -69,6 +71,8 @@
 		194E9BF9594D484EA401F0F7 /* Pods_ShareExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShareExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2923FD6C354A0E909CA945EF /* Pods-ProductLink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProductLink.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProductLink/Pods-ProductLink.release.xcconfig"; sourceTree = "<group>"; };
 		2A0F41F91EDE353E0054A5EC /* indexString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = indexString.swift; sourceTree = "<group>"; };
+		6605A2C01EDEBA7A003B0122 /* RestaurantTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewController.swift; sourceTree = "<group>"; };
+		6605A2C11EDEBA7A003B0122 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
 		66455B561ED559DE0091D714 /* ShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		66455B581ED559DE0091D714 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		66455B5B1ED559DE0091D714 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
@@ -166,6 +170,8 @@
 		6677C24C1E97327F00342D32 /* SimpleTable */ = {
 			isa = PBXGroup;
 			children = (
+				6605A2C01EDEBA7A003B0122 /* RestaurantTableViewController.swift */,
+				6605A2C11EDEBA7A003B0122 /* RestaurantTableViewCell.swift */,
 				6677C24D1E97327F00342D32 /* AppDelegate.swift */,
 				6677C24F1E97327F00342D32 /* ViewController.swift */,
 				6677C2511E97327F00342D32 /* Main.storyboard */,
@@ -486,8 +492,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6605A2C31EDEBA7A003B0122 /* RestaurantTableViewCell.swift in Sources */,
 				2A0F41C21ED5A5D60054A5EC /* Item.swift in Sources */,
 				6677C2501E97327F00342D32 /* ViewController.swift in Sources */,
+				6605A2C21EDEBA7A003B0122 /* RestaurantTableViewController.swift in Sources */,
 				66C430B01E9A8CFA003D6B9C /* TrendingViewController.swift in Sources */,
 				2A0F41FA1EDE353E0054A5EC /* indexString.swift in Sources */,
 				6677C24E1E97327F00342D32 /* AppDelegate.swift in Sources */,
