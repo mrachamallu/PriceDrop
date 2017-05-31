@@ -14,7 +14,6 @@ class RestaurantTableViewCell: UITableViewCell {
 //    @IBOutlet var locationLabel: UILabel!
 //    @IBOutlet var typeLabel: UILabel!
 
-   // @IBOutlet weak var linkToURL: UIButton!
     @IBOutlet var thumbnailImageView: UIImageView!
 
     override func awakeFromNib() {

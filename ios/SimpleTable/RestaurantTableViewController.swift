@@ -54,10 +54,42 @@ class RestaurantTableViewController: UITableViewController {
         cell.thumbnailImageView.image = UIImage(named: restaurantImages[indexPath.row])
 //        cell.locationLabel.text = restaurantLocations[indexPath.row]
 //        cell.typeLabel.text = restaurantTypes[indexPath.row]
+        //cell.linkToURL.tag =
         
         return cell
     }
-    
+   
+    override func tableView(_ tableVied: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let url : URL?
+        
+        switch indexPath.section{
+        case 0:
+            switch indexPath.row{
+            case 0:
+                url = URL(string: "https://www.google.com/")
+            case 1:
+                url = URL(string: "https://www.google.com/")
+            default:
+                return;
+            }
+            
+        case 1:
+            switch indexPath.row{
+            case 0:
+                url = URL(string: "https://www.google.com/")
+            case 1:
+                url = URL(string: "https://www.google.com/")
+            default:
+                return;
+            }
+        default:
+            return;
+        }
+        
+        if url != nil{
+            UIApplication.shared.openURL(url!)
+        }
+    }
 
     /*
     // Override to support conditional editing of the table view.
