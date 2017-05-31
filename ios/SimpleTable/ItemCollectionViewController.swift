@@ -34,6 +34,8 @@ class ItemCollectionViewController: UICollectionViewController {
     {
         var price = ""
         var url = ""
+        var encounteredError = false;
+        var count = 0
         
         for i in 0...JSON.characters.count
         {
@@ -41,13 +43,32 @@ class ItemCollectionViewController: UICollectionViewController {
             {
                 for index in (i+3)...JSON.characters.count
                 {
+                    if (encounteredError)
+                    {
+                        count += 1
+                        if(count == 6)
+                        {
+                            encounteredError=false
+                            count=0
+                        }
+                    }
                     if(JSON[index] == "\"")
                     {
-                        url = JSON[i+3..<index];
-                        print(url);
                         break;
+//                        url = JSON[i+3..<index];
+//                        print(url);
+//                        break;
+                    }
+                    if(index+6<JSON.characters.count && JSON[index..<index+6]=="\\u0026")
+                    {
+                        url+="&"
+                        encounteredError = true
+                    }
+                    if(!encounteredError){
+                        url+=JSON[index]
                     }
                 }
+                print(url)
             }
             if(JSON[i-13..<i] == "originalprice")
             {
