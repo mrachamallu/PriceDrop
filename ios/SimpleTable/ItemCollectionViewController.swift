@@ -19,6 +19,13 @@ class ItemCollectionViewController: UICollectionViewController {
     var itemSet2 = [Item]()
     
     override func viewDidLoad() {
+        Alamofire.request("http://price-drop.herokuapp.com/api/items").responseString { response in
+            print(response.result)   // result of response serialization
+            if let JSON = response.result.value {
+                print(JSON);
+                self.parseJSON(JSON: JSON);
+            }
+        }
         super.viewDidLoad()
         
         // Uncomment the following line to preserve selection between presentations
@@ -112,15 +119,15 @@ class ItemCollectionViewController: UICollectionViewController {
         task.resume()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        Alamofire.request("http://price-drop.herokuapp.com/api/items").responseString { response in
-            print(response.result)   // result of response serialization
-            if let JSON = response.result.value {
-                print(JSON);
-                self.parseJSON(JSON: JSON);
-            }
-        }
-    }
+//    override func viewDidAppear(_ animated: Bool) {
+//        Alamofire.request("http://price-drop.herokuapp.com/api/items").responseString { response in
+//            print(response.result)   // result of response serialization
+//            if let JSON = response.result.value {
+//                print(JSON);
+//                self.parseJSON(JSON: JSON);
+//            }
+//        }
+//    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
