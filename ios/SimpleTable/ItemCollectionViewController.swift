@@ -153,7 +153,7 @@ class ItemCollectionViewController: UICollectionViewController {
         
         //Download image using URL
         let path = item.url
-        let url = NSURL(string: "http://sweat.burnthis.com/wp-content/uploads/2013/03/fashion13.jpg")
+        let url = NSURL(string: path)
         let data = NSData(contentsOf: url as! URL)
         let img = UIImage(data: data as! Data)
         
