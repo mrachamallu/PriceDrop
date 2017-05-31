@@ -1,0 +1,6 @@
+framework module Pods_ProductLink {
+  umbrella header "Pods-ProductLink-umbrella.h"
+
+  export *
+  module * { export * }
+}

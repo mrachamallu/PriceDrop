@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 private let reuseIdentifier = "Cell"
 
@@ -18,7 +19,7 @@ class ItemCollectionViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -26,6 +27,34 @@ class ItemCollectionViewController: UICollectionViewController {
 //        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        Alamofire.request("http://price-drop.herokuapp.com/api/items").responseJSON { response in
+            print(response.result)   // result of response serialization
+            if let JSON = response.result.value {
+                print(JSON);
+                do {
+                    if let data = JSON,
+                        let json = try JSONSerialization.jsonObject(with: data) as? [String: Any]
+                        {
+                        for originalprice in json {
+                            if let name = originalprice["originalprice"] as? String {
+//                                names.append(name)
+                                print(name);
+                            }
+                            if let name2 = originalprice["url"] as? String {
+//                                names.append(name2)
+                                print(name2);
+                            }
+                        }
+                    }
+                } catch {
+                    print("Error deserializing JSON: \(error)")
+                }
+                
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -78,8 +107,8 @@ class ItemCollectionViewController: UICollectionViewController {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ItemCollectionViewCell
         let item = itemSet[indexPath.row]
         cell.itemImageView.image = UIImage(named: item.name)
-        cell.itemPriceLabel.text = "$" + "(item.price)"
-        cell.itemBrandLabel.text = "item.brand"
+        cell.itemPriceLabel.text = "$\(item.price)"
+        cell.itemBrandLabel.text = "$\(item.brand)"
         
         return cell
     }

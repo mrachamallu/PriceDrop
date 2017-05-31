@@ -39,7 +39,7 @@
 				<key>NSExtentionActivationSupportsWebPageWithMaxCount</key>
 				<integer>1</integer>
 			</dict>
-			<key>NSExtensionPythonPreprocessingFil</key>
+			<key>NSExtensionPythonPreprocessingFile</key>
 			<string>GetURL</string>
 		</dict>
 		<key>NSExtensionMainStoryboard</key>

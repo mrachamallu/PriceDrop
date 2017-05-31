@@ -1,0 +1,6 @@
+framework module Pods_PriceDrop {
+  umbrella header "Pods-PriceDrop-umbrella.h"
+
+  export *
+  module * { export * }
+}
