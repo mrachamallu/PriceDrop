@@ -14,8 +14,9 @@ private let reuseIdentifier = "Cell"
 class ItemCollectionViewController: UICollectionViewController {
 
     private var itemSet: [Item] =
-        [Item(name: "barrafina", price: 3.99, description: "lol", brand: "meera"),
-         Item(name: "cafedeadend", price: 4.99, description: "lolol", brand: "christina")]
+        []
+    
+    var itemSet2 = [Item]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,30 +30,73 @@ class ItemCollectionViewController: UICollectionViewController {
         // Do any additional setup after loading the view.
     }
     
+    func parseJSON(JSON: String)
+    {
+        var price = ""
+        var url = ""
+        
+        for i in 0...JSON.characters.count
+        {
+            if(JSON[i-8..<i] == "imageurl")
+            {
+                for index in (i+3)...JSON.characters.count
+                {
+                    if(JSON[index] == "\"")
+                    {
+                        url = JSON[i+3..<index];
+                        print(url);
+                        break;
+                    }
+                }
+            }
+            if(JSON[i-13..<i] == "originalprice")
+            {
+                for index in (i+2)...JSON.characters.count
+                {
+                    if(JSON[index] == ",")
+                    {
+                        price = JSON[i+2..<index];
+                        let hello = Item(name: "newItem", price: Double(price)!, description: "getDescription", brand: "brand", url: url)
+                        itemSet.append(hello)
+                        break;
+                    }
+                }
+            }
+        }
+        collectionView?.reloadData()
+    }
+    
+    func get_image(_ url_str:String, _ imageView:UIImageView)
+    {
+        
+        let url:URL = URL(string: url_str)!
+        let session = URLSession.shared
+        let task = session.dataTask(with: url, completionHandler: {
+            (data, response, error) in
+            if data != nil
+            {
+                let image = UIImage(data: data!)
+    
+                if(image != nil)
+                {
+                    DispatchQueue.main.async(execute: {
+                        imageView.image = image
+//                        UIView.animate(withDuration: 2.5, animations: {
+//                            imageView.alpha = 1.0
+//                        })
+                    })
+                }
+            }
+        })
+        task.resume()
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
-        Alamofire.request("http://price-drop.herokuapp.com/api/items").responseJSON { response in
+        Alamofire.request("http://price-drop.herokuapp.com/api/items").responseString { response in
             print(response.result)   // result of response serialization
             if let JSON = response.result.value {
                 print(JSON);
-                do {
-                    if let data = JSON,
-                        let json = try JSONSerialization.jsonObject(with: data) as? [String: Any]
-                        {
-                        for originalprice in json {
-                            if let name = originalprice["originalprice"] as? String {
-//                                names.append(name)
-                                print(name);
-                            }
-                            if let name2 = originalprice["url"] as? String {
-//                                names.append(name2)
-                                print(name2);
-                            }
-                        }
-                    }
-                } catch {
-                    print("Error deserializing JSON: \(error)")
-                }
-                
+                self.parseJSON(JSON: JSON);
             }
         }
     }
@@ -106,10 +150,16 @@ class ItemCollectionViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ItemCollectionViewCell
         let item = itemSet[indexPath.row]
-        cell.itemImageView.image = UIImage(named: item.name)
+        
+        //Download image using URL
+        let path = item.url
+        let url = NSURL(string: "http://sweat.burnthis.com/wp-content/uploads/2013/03/fashion13.jpg")
+        let data = NSData(contentsOf: url as! URL)
+        let img = UIImage(data: data as! Data)
+        
+        cell.itemImageView.image = img
         cell.itemPriceLabel.text = "$\(item.price)"
         cell.itemBrandLabel.text = "$\(item.brand)"
-        
         return cell
     }
 
