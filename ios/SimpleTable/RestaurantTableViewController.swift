@@ -12,7 +12,7 @@ class RestaurantTableViewController: UITableViewController {
 
     var restaurantNames = ["Cafe Deadend", "Homei", "Teakha", "Cafe Loisl", "Petite Oyster", "For Kee Restaurant", "Po's Atelier", "Bourke Street Bakery", "Haigh's Chocolate", "Palomino Espresso", "Upstate", "Traif", "Graham Avenue Meats", "Waffle & Wolf", "Five Leaves", "Cafe Lore", "Confessional", "Barrafina", "Donostia", "Royal Oak", "CASK Pub and Kitchen"]
     
-    var restaurantImages = ["cafedeadend.jpg", "homei.jpg", "teakha.jpg", "cafeloisl.jpg", "petiteoyster.jpg", "forkeerestaurant.jpg", "posatelier.jpg", "bourkestreetbakery.jpg", "haighschocolate.jpg", "palominoespresso.jpg", "upstate.jpg", "traif.jpg", "grahamavenuemeats.jpg", "wafflewolf.jpg", "fiveleaves.jpg", "cafelore.jpg", "confessional.jpg", "barrafina.jpg", "donostia.jpg", "royaloak.jpg", "caskpubkitchen.jpg"]
+    var restaurantImages = ["modaLogo", "1", "2", "3", "4", "5", "6"]
     
     var restaurantLocations = ["Hong Kong", "Hong Kong", "Hong Kong", "Hong Kong", "Hong Kong", "Hong Kong", "Hong Kong", "Sydney", "Sydney", "Sydney", "New York", "New York", "New York", "New York", "New York", "New York", "New York", "London", "London", "London", "London"]
     
@@ -40,7 +40,7 @@ class RestaurantTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return restaurantNames.count
+        return restaurantImages.count
     }
 
     
@@ -60,28 +60,43 @@ class RestaurantTableViewController: UITableViewController {
     }
    
     override func tableView(_ tableVied: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let url : URL?
+        var url : URL?
         
         switch indexPath.section{
         case 0:
             switch indexPath.row{
-            case 0:
-                url = URL(string: "https://www.google.com/")
+            case 0: break
             case 1:
-                url = URL(string: "https://www.google.com/")
+                url = URL(string: "https://www.francescas.com")
+                break
+            case 2:
+                url = URL(string: "http://www.prada.com/en.html?cc=US")
+                break
+            case 3:
+                url = URL(string: "http://www.sperry.com/en/home")
+                break
+            case 4:
+                url = URL(string: "https://www.zara.com")
+                break
+            case 5:
+                url = URL(string: "http://shop.nordstrom.com")
+                break
+            case 6:
+                url = URL(string: "https://www.freepeople.com")
+                break
             default:
                 return;
             }
             
-        case 1:
-            switch indexPath.row{
-            case 0:
-                url = URL(string: "https://www.google.com/")
-            case 1:
-                url = URL(string: "https://www.google.com/")
-            default:
-                return;
-            }
+//        case 1:
+//            switch indexPath.row{
+//            case 0:
+//                url = URL(string: "https://www.google.com/")
+//            case 1:
+//                url = URL(string: "https://www.google.com/")
+//            default:
+//                return;
+//            }
         default:
             return;
         }
@@ -90,6 +105,7 @@ class RestaurantTableViewController: UITableViewController {
             UIApplication.shared.openURL(url!)
         }
     }
+
 
     /*
     // Override to support conditional editing of the table view.

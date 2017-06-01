@@ -9,8 +9,10 @@
 import UIKit
 
 class ItemCollectionViewCell: UICollectionViewCell {
+    @IBOutlet var itemTitle: UILabel!
+    @IBOutlet var itemDescription: UILabel!
     @IBOutlet var itemImageView: UIImageView!
-    @IBOutlet var itemPriceLabel: UILabel!
-    @IBOutlet var itemDescriptionLabel: UILabel!
-    @IBOutlet var itemBrandLabel: UILabel!
+    @IBOutlet var itemOriginalPrice: UILabel!
+    @IBOutlet var itemCurrentPrice: UILabel!
+    @IBOutlet var itemPriceStatus: UILabel!
 }

@@ -6,33 +6,38 @@
 	<dict>
 		<key>Alamofire.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-PriceDrop.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-ProductLink.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>5</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-ShareExtension.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>6</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>36FDCF4C1924A01CDACA6B3EDD3FFF7B</key>
+		<key>643DEADDE0676B53F72D69DB7DE8518F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>643DEADDE0676B53F72D69DB7DE8518F</key>
+		<key>6D55369001983BDB6519709A229C5528</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -43,6 +48,11 @@
 			<true/>
 		</dict>
 		<key>EA20A93B663D98A1609AED2905F97034</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EA22DEE5851D1AE1ABDEA5258E35C7CF</key>
 		<dict>
 			<key>primary</key>
 			<true/>

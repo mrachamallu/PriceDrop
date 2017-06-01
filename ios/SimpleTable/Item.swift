@@ -9,18 +9,20 @@
 import Foundation
 
 struct Item {
-    var name: String = ""
-    var price: Double = 0.0
+    var title: String = ""
     var description: String = ""
-    var brand: String = ""
     var url: String = ""
+    var imageurl: String = ""
+    var originalprice: Double = 0.0
+    var currentprice: Double = 0.0
     
-    init(name: String, price: Double, description: String, brand: String, url: String) {
-        self.name = name
-        self.price = price
+    init(title: String, description: String, url: String, imageurl: String, originalprice: Double, currentprice: Double) {
+        self.title = title
         self.description = description
-        self.brand = brand
         self.url = url
+        self.imageurl = imageurl
+        self.originalprice = originalprice
+        self.currentprice = currentprice
     }
 }
 
