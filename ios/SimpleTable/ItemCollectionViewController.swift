@@ -31,12 +31,18 @@ class ItemCollectionViewController: UICollectionViewController {
         // Do any additional setup after loading the view.
     }
     
+    func sortItems(a: Item, b: Item) -> Bool {
+        
+        return a.id < b.id
+        
+    }
+    
     func parseJSON(jsonString: String)
     {
         if let jsonData = jsonString.data(using: .utf8, allowLossyConversion: false) {
             let json = JSON(data: jsonData)
             for (_, subJson):(String, JSON) in json {
-                
+                let id = Int(String(describing: subJson["id"]))
                 let title = String(describing: subJson["title"])
                 let description = String(describing: subJson["description"])
                 let url = String(describing: subJson["url"])
@@ -44,10 +50,11 @@ class ItemCollectionViewController: UICollectionViewController {
                 let originalprice = String(describing: subJson["originalprice"])
                 let currentprice = String(describing: subJson["currentprice"])
                 
-                let hello = Item(title: title, description: description, url: url, imageurl: imageurl, originalprice: Double(originalprice)!, currentprice: Double(currentprice)!)
+                let hello = Item(title: title, id: (id)!, description: description, url: url, imageurl: imageurl, originalprice: Double(originalprice)!, currentprice: Double(currentprice)!)
                 itemSet.append(hello)
                 
             }
+            itemSet.sort(by: sortItems)
         }
         
         collectionView?.reloadData()
